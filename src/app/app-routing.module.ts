@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddComponent } from './add/add.component';
+import { ListComponent } from './list/list.component';
+import { RemoveComponent } from './remove/remove.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'add',component:AddComponent},
+  {path:'remove',component:RemoveComponent},
+  
+  {path:'list',component:ListComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
